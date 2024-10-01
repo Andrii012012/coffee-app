@@ -1,0 +1,1 @@
+export type TypeStatus = "idel" | "reject" | "success" | "pending";
