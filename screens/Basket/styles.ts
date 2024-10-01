@@ -72,4 +72,15 @@ export const styles = StyleSheet.create({
     marginBottom: 15,
     textAlign: "center",
   },
+  message: {
+    fontSize: 36,
+    textAlign: "center",
+    fontWeight: "700",
+  },
+  wrapper: {
+    width: "100%",
+    flex: 1,
+    alignItems: "center",
+    justifyContent: "center",
+  },
 });

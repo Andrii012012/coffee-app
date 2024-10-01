@@ -2,14 +2,16 @@ import { FlatList, Image, Text, TouchableOpacity, View } from "react-native";
 import { styles } from "../styles";
 import { IGoods } from "../../../features/goods/type";
 import { Ionicons } from "@expo/vector-icons";
-import { filterLiked } from "../../../features/goods/selectors";
 import { TNavigationProp } from "../../../routes/typesRoutes";
 import { useNavigation } from "@react-navigation/native";
-import { useAppSelector } from "../../../hooks/useAppSelector";
 
-export default function ListLikedGoods(): JSX.Element {
+interface IProps {
+    likedGoods: IGoods[];
+}
 
-    const likedGoods = useAppSelector(filterLiked);
+export default function ListLikedGoods(props: IProps): JSX.Element {
+
+    let { likedGoods } = props;
 
     const goTo = useNavigation<TNavigationProp>();
 

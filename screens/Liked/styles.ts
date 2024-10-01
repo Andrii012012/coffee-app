@@ -43,4 +43,15 @@ export const styles = StyleSheet.create({
     height: 80,
     marginRight: 25,
   },
+  body: {
+    flex: 1,
+    width: "100%",
+    alignItems: "center",
+    justifyContent: "center",
+  },
+  message: {
+    fontSize: 36,
+    textAlign: "center",
+    fontWeight: "700",
+  },
 });
